@@ -1,0 +1,10 @@
+
+{% extends 'base.html' %}
+{% block head%}
+{{super()}}
+{% block code%}
+{% for Post in Posts %}
+{{Post[0]}}
+{{Post[1]}}
+{% endfor %}
+{% endblock %}

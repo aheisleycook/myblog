@@ -1,0 +1,9 @@
+.navbar ul li{
+background-color: red;
+height: 10px;
+display:inline-block;
+}
+
+.navbar:hover {
+height: 40px;
+}

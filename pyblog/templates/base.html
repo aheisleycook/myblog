@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+{% block head %}
 <head>
     <meta charset="UTF-8">
-    <title>myblog</title>
-    <script src="/static/js/jquery.js"></script>
-    <script>
-        $("nav-menu").lick(function())
+    <title>home</title>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="stylesheet" src="/static/css/bootstrap.min.css">
+    <style>
+        .navbar ul li
         {
-        $("nav-menu").hide();
-        });
+        display:inline-block;
 
+
+        }
+        header
+        {
+        background-color:#f44;
+        }
+
+
+        h1 {
+        font-family:tahoma;
+        font-weight:bolder;
+        color:blue;
+        position:relative;
+        left:40px;
+        right:40px;
+        }
+
+    </style>
+    <script>
     </script>
 </head>
 <body>
+
+
 <header>
     <h1>my blog</h1>
 </header>
-<nav clas="navbar">
+{% endblock  %}
+{% block body %}
+<nav class="navbar">
     <ul>
-        <li>home</li>
-        <li>posts<li>
-        <li>contact</li>
+        <a href="/"><li>home</li></a>
+    <a href="/posts"><li>posts</li></a>
+        <a href="/form"><li>add form</li></a>
 
     </ul>
 </nav>
+{% endblock %}
+
 </body>
+
 </html>

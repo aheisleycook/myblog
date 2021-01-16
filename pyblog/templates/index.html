@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-{% block code%}
-{% index.html extends base.html %}
-{% end block %}
-</body>
+{% extends 'base.html' %}
+{% block header%}
+{{super}}
+{% endblock %}
+{% block content %}
+<h3>home landing</h3>
 </html>
+{% endblock %}
